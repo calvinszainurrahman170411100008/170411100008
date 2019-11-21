@@ -1,0 +1,1258 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Mata Kuliah Penambangan Data">
+      
+      
+        <link rel="canonical" href="https://squidfunk.github.io/mkdocs-material/tugas1/">
+      
+      
+        <meta name="author" content="Calvins Zainur Rahman">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>Tugas 1 - Calvins_Zainur_Rahman</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.750b69bd.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "None", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#tugas-1-penambangan-data" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://squidfunk.github.io/mkdocs-material/" title="Calvins_Zainur_Rahman" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Calvins_Zainur_Rahman
+            </span>
+            <span class="md-header-nav__topic">
+              Tugas 1
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/squidfunk/mkdocs-material" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    squidfunk/mkdocs-material
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="Penulis" class="md-tabs__link md-tabs__link--active">
+        Penulis
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://squidfunk.github.io/mkdocs-material/" title="Calvins_Zainur_Rahman" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Calvins_Zainur_Rahman
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/squidfunk/mkdocs-material" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    squidfunk/mkdocs-material
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Penulis" class="md-nav__link">
+      Penulis
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tugas 1
+      </label>
+    
+    <a href="./" title="Tugas 1" class="md-nav__link md-nav__link--active">
+      Tugas 1
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mean-nilai-rata-rata" title="Mean (Nilai Rata-Rata)" class="md-nav__link">
+    Mean (Nilai Rata-Rata)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rumus-mean" title="Rumus Mean :" class="md-nav__link">
+    Rumus Mean :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#median-nilai-tengah" title="Median (Nilai Tengah)" class="md-nav__link">
+    Median (Nilai Tengah)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_1" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_1" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modus" title="Modus" class="md-nav__link">
+    Modus
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_2" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_2" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standar-deviasi" title="Standar Deviasi" class="md-nav__link">
+    Standar Deviasi
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_3" title="code" class="md-nav__link">
+    code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_3" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#count" title="count" class="md-nav__link">
+    count
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_4" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_4" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nilai-minimal" title="Nilai Minimal" class="md-nav__link">
+    Nilai Minimal
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_5" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_5" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nilai-maximal" title="Nilai Maximal" class="md-nav__link">
+    Nilai Maximal
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_6" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_6" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kuartil" title="Kuartil" class="md-nav__link">
+    Kuartil
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kemiringan-kurva-skewnes" title="Kemiringan kurva (Skewnes)¶" class="md-nav__link">
+    Kemiringan kurva (Skewnes)¶
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_7" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_7" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tugas2/" title="Tugas 2" class="md-nav__link">
+      Tugas 2
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tugas3/" title="Tugas 3" class="md-nav__link">
+      Tugas 3
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tugas4/" title="Tugas 4" class="md-nav__link">
+      Tugas 4
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../specimen/" title="Tugas 5" class="md-nav__link">
+      Tugas 5
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../customization/" title="Customization" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../compliance/" title="Compliance with GDPR" class="md-nav__link">
+      Compliance with GDPR
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../release-notes/" title="Release notes" class="md-nav__link">
+      Release notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../authors-notes/" title="Author's notes" class="md-nav__link">
+      Author's notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tugas11/" title="Tugas11" class="md-nav__link">
+      Tugas11
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mean-nilai-rata-rata" title="Mean (Nilai Rata-Rata)" class="md-nav__link">
+    Mean (Nilai Rata-Rata)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rumus-mean" title="Rumus Mean :" class="md-nav__link">
+    Rumus Mean :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#median-nilai-tengah" title="Median (Nilai Tengah)" class="md-nav__link">
+    Median (Nilai Tengah)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_1" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_1" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modus" title="Modus" class="md-nav__link">
+    Modus
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_2" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_2" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standar-deviasi" title="Standar Deviasi" class="md-nav__link">
+    Standar Deviasi
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_3" title="code" class="md-nav__link">
+    code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_3" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#count" title="count" class="md-nav__link">
+    count
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_4" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_4" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nilai-minimal" title="Nilai Minimal" class="md-nav__link">
+    Nilai Minimal
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_5" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_5" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nilai-maximal" title="Nilai Maximal" class="md-nav__link">
+    Nilai Maximal
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_6" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_6" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kuartil" title="Kuartil" class="md-nav__link">
+    Kuartil
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kemiringan-kurva-skewnes" title="Kemiringan kurva (Skewnes)¶" class="md-nav__link">
+    Kemiringan kurva (Skewnes)¶
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code_7" title="code :" class="md-nav__link">
+    code :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output_7" title="output :" class="md-nav__link">
+    output :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="tugas-1-penambangan-data">Tugas 1 Penambangan Data<a class="headerlink" href="#tugas-1-penambangan-data" title="Permanent link">&para;</a></h1>
+<h4 id="mean-nilai-rata-rata">Mean (Nilai Rata-Rata)<a class="headerlink" href="#mean-nilai-rata-rata" title="Permanent link">&para;</a></h4>
+<p>Mean atau nilai rata-rata adalah jumlah seluruh data dibagi dengan banyaknya data. cara menghitung mean adalah dengan menggunakan rumus menghitung nilai rata-rata dari sekumpulan data sebagai berikut:</p>
+<h5 id="rumus-mean">Rumus Mean :<a class="headerlink" href="#rumus-mean" title="Permanent link">&para;</a></h5>
+<p><a href="../assets/images/rumus.gif"><img alt="Material for MkDocs" src="../assets/images/rumus.gif" /></a></p>
+<h5 id="code">code :<a class="headerlink" href="#code" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">import pandas as dt
+df=dt.read_csv("calvins.csv")
+df['TKI'].describe()
+df['NELAYAN'].describe()
+df['PNG'].describe()
+df['PNS'].describe()
+print("rata-rata Tenaga Kerja Indonesia   :",df['TKI'].mean())
+print("rata-rata Nelayan Ikan             :",df['NELAYAN'].mean())
+print("rata-rata Pengangguran             :",df['PNG'].mean())
+print("rata-rata Pegawai Negeri Sipil     :",df['PNS'].mean())</code></pre>
+
+<h5 id="output">output :<a class="headerlink" href="#output" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">rata-rata Tenaga Kerja Indonesia   : 296.372
+rata-rata Nelayan Ikan             : 82.856
+rata-rata Pengangguran             : 86.566
+rata-rata Pegawai Negeri Sipil     : 112.996</code></pre>
+
+<h4 id="median-nilai-tengah">Median (Nilai Tengah)<a class="headerlink" href="#median-nilai-tengah" title="Permanent link">&para;</a></h4>
+<p>Median adalah nilai data yang letaknya di tengah dari data yang telah diurutkan dari nilai terkecil sampai nilai terbesar. Biasanya median diberi simbol Me.</p>
+<p><em>Cara Menghitung Median</em> Pada data yang banyaknya ganjil maka ada satu data di tepat tengah data yang telah diurutkan. Jika banyaknya data ganjil, maka median adalah data yang letaknya tepat di tengah sekumpulan data yang telah diurutkan tersebut .</p>
+<p>Urutan data dari yang terkecil: 21, 21, 21, 23, 24, <strong>25</strong>, 25, 26, 27, 27, 28 Median adalah data yang di tengah urutan yaitu 25</p>
+<p>Pada data yang banyaknya genap maka ada dua data di tepat tengah data yang telah diurutkan. Jika banyaknya data genap, maka median data adalah rata-rata kedua data yang letaknya tepat di tengah sekumpulan data yang telah diurutkan tersebut .</p>
+<p>Misalkan median dari 12 data berikut: 24, 33, 47, 60, 30, 24, 25, 35, 49, 41, 52, 58, Urutan data dari yang terkecil: 24, 24, 25, 30, 33, <strong>35</strong>, <strong>41</strong>, 47, 49, 52, 58, 60 Median adalah rata-rata dua data di tengah = (35+41)/2 = 76/2 = 38</p>
+<h5 id="code_1">code :<a class="headerlink" href="#code_1" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">import pandas as dt
+df=dt.read_csv("calvins.csv")
+df['TKI'].describe()
+makan=("Q2 Tenaga Kerja Indonesia",df['TKI'].median())
+print (makan)</code></pre>
+
+<h5 id="output_1">output :<a class="headerlink" href="#output_1" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">('Q2 Tenaga Kerja Indonesia', 205.5)</code></pre>
+
+<h4 id="modus">Modus<a class="headerlink" href="#modus" title="Permanent link">&para;</a></h4>
+<p>Modus adalah data yang paling sering muncul atau yang memiliki frekuensi terbanyak dari sekumpulan data. Biasanya modus diberi simbol Mo. Cara menentukan modus adalah dengan menghitung frekuensi semua data lalu memilih data yang frekuensi munculnya terbesar.</p>
+<h5 id="code_2">code :<a class="headerlink" href="#code_2" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">import pandas as dt
+df=dt.read_csv("calvins.csv")
+df['TKI'].describe()
+df['NELAYAN'].describe()
+df['PNG'].describe()
+df['PNS'].describe()
+print("modus Tenaga Kerja Indonesia   :",df['TKI'].mode())
+print("modus Nelayan Ikan             :",df['NELAYAN'].mode())
+print("modus Pengangguran             :",df['PNG'].mode())
+print("modus Pegawai Negeri Sipil     :",df['PNS'].mode())</code></pre>
+
+<h5 id="output_2">output :<a class="headerlink" href="#output_2" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">modus Tenaga Kerja Indonesia   : 0    198
+dtype: int64
+modus Nelayan Ikan             : 0    25
+dtype: int64
+modus Pengangguran             : 0    25
+dtype: int64
+modus Pegawai Negeri Sipil     : 0    20
+dtype: int64</code></pre>
+
+<h4 id="standar-deviasi">Standar Deviasi<a class="headerlink" href="#standar-deviasi" title="Permanent link">&para;</a></h4>
+<p>Standar deviasi adalah nilai statistik yang digunakan untuk menentukan bagaimana sebaran data dalam sampel, dan seberapa dekat titik data individu ke mean – atau rata-rata – nilai sampel.</p>
+<h5 id="code_3">code<a class="headerlink" href="#code_3" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">import pandas as dt
+df=dt.read_csv("calvins.csv")
+df['TKI'].describe()
+df['NELAYAN'].describe()
+df['PNG'].describe()
+df['PNS'].describe()
+print("standar deviasi Tenaga Kerja Indonesia   :",df['TKI'].std())
+print("standar deviasi Nelayan Ikan             :",df['NELAYAN'].std())
+print("standar deviasi Pengangguran             :",df['PNG'].std())
+print("standar deviasi Pegawai Negeri Sipil     :",df['PNS'].std())</code></pre>
+
+<h5 id="output_3">output :<a class="headerlink" href="#output_3" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">standar deviasi Tenaga Kerja Indonesia   : 257.461676071004
+standar deviasi Nelayan Ikan             : 194.34524798623139
+standar deviasi Pengangguran             : 197.48695105163623
+standar deviasi Pegawai Negeri Sipil     : 260.19936087315347</code></pre>
+
+<h4 id="count">count<a class="headerlink" href="#count" title="Permanent link">&para;</a></h4>
+<p>Count adalah pencarian hasil akhir dari keseluruhan data</p>
+<h5 id="code_4">code :<a class="headerlink" href="#code_4" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">import pandas as dt
+df=dt.read_csv("calvins.csv")
+df['TKI'].describe()
+df['NELAYAN'].describe()
+df['PNG'].describe()
+df['PNS'].describe()
+print("varian Tenaga Kerja Indonesia   :",df['TKI'].count())
+print("varian Nelayan Ikan             :",df['NELAYAN'].count())
+print("varian Pengangguran             :",df['PNG'].count())
+print("varian Pegawai Negeri Sipil     :",df['PNS'].count())</code></pre>
+
+<h5 id="output_4">output :<a class="headerlink" href="#output_4" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">varian Tenaga Kerja Indonesia   : 500
+varian Nelayan Ikan             : 500
+varian Pengangguran             : 500
+varian Pegawai Negeri Sipil     : 500</code></pre>
+
+<h4 id="nilai-minimal">Nilai Minimal<a class="headerlink" href="#nilai-minimal" title="Permanent link">&para;</a></h4>
+<p>Nilai minimal adalah nilai terkecial dalam data tersebut.</p>
+<h5 id="code_5">code :<a class="headerlink" href="#code_5" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">import pandas as dt
+df=dt.read_csv("calvins.csv")
+df['TKI'].describe()
+df['NELAYAN'].describe()
+df['PNG'].describe()
+df['PNS'].describe()
+print("min Tenaga Kerja Indonesia   :",df['TKI'].min())
+print("min Nelayan Ikan             :",df['NELAYAN'].min())
+print("min Pengangguran             :",df['PNG'].min())
+print("min Pegawai Negeri Sipil     :",df['PNS'].min())</code></pre>
+
+<h5 id="output_5">output :<a class="headerlink" href="#output_5" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">min Tenaga Kerja Indonesia   : 63
+min Nelayan Ikan             : 10
+min Pengangguran             : 10
+min Pegawai Negeri Sipil     : 6</code></pre>
+
+<h4 id="nilai-maximal">Nilai Maximal<a class="headerlink" href="#nilai-maximal" title="Permanent link">&para;</a></h4>
+<p>Nilai maximal adalah nilai terbesar dalam data tersebut</p>
+<h5 id="code_6">code :<a class="headerlink" href="#code_6" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">import pandas as dt
+df=dt.read_csv("calvins.csv")
+df['TKI'].describe()
+df['NELAYAN'].describe()
+df['PNG'].describe()
+df['PNS'].describe()
+print("max Tenaga Kerja Indonesia   :",df['TKI'].max())
+print("max Nelayan Ikan             :",df['NELAYAN'].max())
+print("max Pengangguran             :",df['PNG'].max())
+print("max Pegawai Negeri Sipil     :",df['PNS'].max())</code></pre>
+
+<h5 id="output_6">output :<a class="headerlink" href="#output_6" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">max Tenaga Kerja Indonesia   : 2110
+max Nelayan Ikan             : 2000
+max Pengangguran             : 2000
+max Pegawai Negeri Sipil     : 2000</code></pre>
+
+<h4 id="kuartil">Kuartil<a class="headerlink" href="#kuartil" title="Permanent link">&para;</a></h4>
+<p>Kuartil adalah data yang membagi posisi sekumpulan data yang telah diurutkan menjadi empat bagian. Dalam satu urutan data terdapat 3 kuartil yaitu kuartil bawah, kuartil tengah, dan kuartil atas. Cara menentukan kuartil adalah sebagai berikut.</p>
+<ul>
+<li>Kuartil bawah adalah data pada posisi ¼ dari kumpulan data yang telah diurutkan. Kuartil bawah disimbolkan dengan Q1.</li>
+<li>Kuartil tengah adalah data pada posisi 2/4 dari kumpulan data yang telah diurutkan. Kuartil tengah sama dengan median. Kuartil tengah disimbolkan dengan Q2.</li>
+<li>Kuartil atas adalah data pada posisi ¾ dari kumpulan data yang telah diurutkan. Kuartil atas disimbolkan dengan Q3.</li>
+</ul>
+<p>Posisi ketiga kuartil ditentukan dari rumus berikut.</p>
+<p><strong>Posisi Qi = i(n+1)/4</strong></p>
+<p>i = indeks kuartil yaitu 1, 2, 3 dan n = banyaknya data</p>
+<p>Misalkan kita akan menentukan kuartil bawah, tengah, dan kuartil atas dari 15 data berikut: 11, 24, 12, 15, 12, 18, 22, 25, 26, 27, 17, 22, 24, 19, 12.</p>
+<p>Urutan data dari yang terkecil: 11, 12, 12, 12, 15, 17, 18, 19, 22, 22, 24, 24, 25, 26, 27 Posisi ketiga kuartil adalah sebagai berikut Posisi Q1 = 1.(15+1)/4 = (16)/4 = 4 (data urutan ke 4) Posisi Q2 = 2. (15+1)/4 = 2(16)/4 = 8 (data urutan ke 4) Posisi Q3 = 3. (15+1)/4 = 3(16)/4 = 12 (data urutan ke 4) Berdasarkan posisi kuartil pada urutan data maka dapat ditentukan ketiga kuartil 11, 12, 12, <strong>12</strong>, 15, 17, 18, <strong>19</strong>, 22, 22, 24, <strong>24</strong>, 25, 26, 27 Jadi :</p>
+<ul>
+<li>kuartil bawah adalah 12</li>
+<li>Kuartil tengah = median = 19</li>
+<li>Kuartil atas = 24</li>
+</ul>
+<h4 id="kemiringan-kurva-skewnes"><strong>Kemiringan kurva (Skewnes)</strong><a href="https://fairozy.github.io/#kemiringan-kurva-skewnes">¶</a><a class="headerlink" href="#kemiringan-kurva-skewnes" title="Permanent link">&para;</a></h4>
+<p>Skew merupakan derajat ketidak simetrian (keasimetrian), atau dapat juga disefinisikan sebagai penyimpangan dari kesimetrian dari suatu distribusi.</p>
+<h5 id="code_7">code :<a class="headerlink" href="#code_7" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">import pandas as dt
+df=dt.read_csv("calvins.csv")
+df['TKI'].describe()
+df['NELAYAN'].describe()
+df['PNG'].describe()
+df['PNS'].describe()
+print("skewnes Tenaga Kerja Indonesia   :",df['TKI'].skew())
+print("skewnes  Nelayan Ikan             :",df['NELAYAN'].skew())
+print("skewnes  Pengangguran             :",df['PNG'].skew())
+print("skewnes  Pegawai Negeri Sipil     :",df['PNS'].skew())</code></pre>
+
+<h5 id="output_7">output :<a class="headerlink" href="#output_7" title="Permanent link">&para;</a></h5>
+<pre class="codehilite"><code class="language-python">skewnes Tenaga Kerja Indonesia   : 3.6100153733248157
+skewnes  Nelayan Ikan             : 6.275034666861863
+skewnes  Pengangguran             : 6.0268693397247235
+skewnes  Pegawai Negeri Sipil     : 4.765218397488693</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Penulis" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Penulis
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../tugas2/" title="Tugas 2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Tugas 2
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 - 2019 Calvins 08
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="http://facebook.com/" class="md-footer-social__link fa fa-facebook"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.8c0d971c.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
